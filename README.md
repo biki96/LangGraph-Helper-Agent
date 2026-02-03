@@ -6,6 +6,12 @@ AI assistant for LangGraph and LangChain documentation using RAG and web search.
 
 ## Setup
 
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) if you don't have it:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Then:
 ```bash
 uv sync
 cp .env.example .env

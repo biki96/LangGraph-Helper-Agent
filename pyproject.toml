@@ -7,6 +7,14 @@ name = "langgraph-helper-agent"
 version = "0.1.0"
 description = "AI assistant for LangGraph and LangChain documentation"
 readme = "README.md"
+license = "MIT"
+authors = [{ name = "biki96" }]
+keywords = ["langgraph", "langchain", "rag", "ai", "assistant"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+]
 requires-python = ">=3.12"
 dependencies = [
     # Core - LangGraph v1 + LangChain V1 API
@@ -27,6 +35,10 @@ dependencies = [
     "rich>=14,<15",
     "httpx>=0.28,<1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/biki96/LangGraph-Helper-Agent"
+Repository = "https://github.com/biki96/LangGraph-Helper-Agent"
 
 [project.scripts]
 lha = "lha.main:main"
