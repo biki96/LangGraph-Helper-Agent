@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "lha ask",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "lha.main",
+      "args": [
+        "ask",
+        "${input:question}",
+        "--mode", "${input:mode}",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "question",
+      "type": "promptString",
+      "description": "Question to ask"
+    },
+    {
+      "id": "mode",
+      "type": "pickString",
+      "description": "Mode",
+      "options": ["offline", "online", "hybrid"],
+      "default": "offline"
+    }
+  ]
+}
